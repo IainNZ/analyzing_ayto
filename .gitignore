@@ -274,3 +274,12 @@ TSWLatexianTemp*
 
 # Makeindex log files
 *.lpz
+
+
+
+
+
+
+# Custom stuff
+analyze
+*.json
