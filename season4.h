@@ -16,7 +16,6 @@ using Man = uint8_t;
 using Woman = uint8_t;
 using Couple = std::pair<Man, Woman>;
 
-// clang-format off
 
 const Man PROSPER = 0;
 const Man JOHN = 1;
@@ -93,5 +92,3 @@ const std::pair<std::array<Woman, NUM_MEN>, size_t> MC_RESULTS[] = {
     {{EMMA, VICTORIA, FRANCESCA, KAYLEN, JULIA,
       ALYSSA, MIKALA, TORI, NICOLE, CAMILLE}, 10}
 };
-
-// clang-format on
