@@ -11,6 +11,7 @@
 #define NUM_MEN 10
 #define NUM_WOMEN 10
 #define MAX_PAIRINGS 3628800
+#define NUM_ROUND 10
 using Man = uint8_t;
 using Woman = uint8_t;
 using Couple = std::pair<Man, Woman>;

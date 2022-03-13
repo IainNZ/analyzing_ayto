@@ -16,6 +16,7 @@
 // ordering of men.
 
 #include "season4.h"
+// #include "season6.h"
 
 // Utility class for operating on pairings.
 struct Pairing
@@ -106,7 +107,7 @@ int main(void)
     } while (std::next_permutation(ALL_WOMEN.begin(), ALL_WOMEN.end()));
     printf("Initial pairings %9d\n", MAX_PAIRINGS);
 
-    for (size_t round = 0; round < 10; round++)
+    for (size_t round = 0; round < NUM_ROUND; round++)
     {
         auto [tb_couple, tb_are_pm] = TB_RESULTS[round];
         int num_valid_after_tb = 0;
@@ -128,7 +129,7 @@ int main(void)
             num_valid_after_mc += pairing_valid[i];
         }
         printf("After Week %2zu MC %9d\n", round + 1, num_valid_after_mc);
-
-        printCoupleCounts(pairings, pairing_valid, true);
     }
+
+    printCoupleCounts(pairings, pairing_valid, /*dropZeros=*/true);
 }
