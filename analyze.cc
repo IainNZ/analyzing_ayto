@@ -1,10 +1,8 @@
-// #include <cstdio>
-// #include <algorithm>
-// #include <array>
-// #include <map>
-// #include <set>
-// #include <string>
-// #include <vector>
+#include <cstdio>
+
+#include <algorithm>
+#include <array>
+#include <utility>
 
 // Efficient storage of pairings:
 // A full pairing of men and woman can be represented by N tuples.
