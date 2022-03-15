@@ -11,7 +11,7 @@
 #define NUM_MEN 11
 #define NUM_WOMEN 11
 #define MAX_PAIRINGS 39916800
-#define NUM_ROUND 7
+#define NUM_ROUND 8
 using Man    = uint8_t;
 using Woman  = uint8_t;
 using Couple = std::pair<Man, Woman>;
@@ -84,40 +84,34 @@ const std::pair<Couple, bool> TB_RESULTS[] = {
     {{CLINTON, UCHE},   false},
     {{KEITH, ALEXIS},   false},
     {{KEITH, ALIVIA},   false},
+    {{MICHAEL, AUDREY}, false},
 };
 
 const std::pair<std::array<Woman, NUM_MEN>, size_t> MC_RESULTS[] = {
     {{ALIVIA, GELES, NURYS, ALEXIS, ZOE, KEYANA, JADA, UCHE, AUDREY, NICOLE,
       DIANDRA},
-     3                },
+     3},
     {{ALIVIA, DIANDRA, NURYS, ALEXIS, AUDREY, KEYANA, JADA, UCHE, GELES, ZOE,
       NICOLE},
-     1                },
+     1},
     {{ALIVIA, JADA, GELES, DIANDRA, ZOE, AUDREY, ALEXIS, UCHE, KEYANA, NICOLE,
       NURYS},
-     2                },
+     2},
     {{DIANDRA, KEYANA, ALIVIA, NURYS, ZOE, GELES, NICOLE, UCHE, AUDREY, JADA,
       ALEXIS},
-     3                },
+     3},
     {{ALIVIA, NICOLE, DIANDRA, ALEXIS, ZOE, NURYS, GELES, JADA, AUDREY, KEYANA,
       UCHE},
-     1                },
-    {{
-         NURYS,
-         KEYANA,
-         ALIVIA,
-         ZOE,
-         ALEXIS,
-         UCHE,
-         JADA,
-         GELES,
-         AUDREY,
-         NICOLE,
-         DIANDRA,
-     },         4},
+     1},
+    {{NURYS, KEYANA, ALIVIA, ZOE, ALEXIS, UCHE, JADA, GELES, AUDREY, NICOLE,
+      DIANDRA},
+     4},
     {{NURYS, KEYANA, ALEXIS, JADA, UCHE, AUDREY, ZOE, GELES, ALIVIA, NICOLE,
       DIANDRA},
-     5                }
+     5},
+    {{NURYS, ALIVIA, UCHE, AUDREY, JADA, KEYANA, ALEXIS, GELES, ZOE, NICOLE,
+      DIANDRA},
+     3}
 };
 
 // clang-format on

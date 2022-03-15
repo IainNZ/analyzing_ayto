@@ -13,8 +13,8 @@
 // for the N! of permutations of the woman with respect to a fixed
 // ordering of men.
 
-#include "season4.h"
-// #include "season6.h"
+// #include "season4.h"
+#include "season6.h"
 
 // Utility class for operating on pairings.
 struct Pairing {
