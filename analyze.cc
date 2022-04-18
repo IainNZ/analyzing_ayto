@@ -115,5 +115,5 @@ int main(void) {
         printf("After Week %2zu MC %9d\n", round + 1, num_valid_after_mc);
     }
 
-    printCoupleCounts(pairings, pairing_valid, /*dropZeros=*/false);
+    printCoupleCounts(pairings, pairing_valid, /*dropZeros=*/true);
 }

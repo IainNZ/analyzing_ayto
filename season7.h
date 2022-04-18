@@ -11,7 +11,7 @@
 #define NUM_MEN 11
 #define NUM_WOMEN 11
 #define MAX_PAIRINGS 39916800
-#define NUM_ROUND 8
+#define NUM_ROUND 9
 using Man    = uint8_t;
 using Woman  = uint8_t;
 using Couple = std::pair<Man, Woman>;
@@ -84,6 +84,7 @@ const std::pair<Couple, bool> TB_RESULTS[] = {
     {{BRETT, CALI},   false},
     {{ZAK, NUTSA},    false},
     {{TEVIN, KENYA},  true },
+    {{CAM, SAMANTHA}, false},
 };
 
 const std::pair<std::array<Woman, NUM_MEN>, size_t> MC_RESULTS[] = {
@@ -110,6 +111,8 @@ const std::pair<std::array<Woman, NUM_MEN>, size_t> MC_RESULTS[] = {
      4},
     {{CALI, KENYA, JASMINE, NUTSA, LAUREN, MORGAN, MARIA, SAMANTHA, KAYLA, ASIA,
       BRIA},
+     4},
+    {{SAMANTHA, KENYA, NUTSA, BRIA, MORGAN, JASMINE, MARIA, CALI, KAYLA, LAUREN, ASIA},
      4},
 };
 
