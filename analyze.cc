@@ -14,7 +14,8 @@
 // ordering of men.
 
 // #include "season4.h"
-#include "season6.h"
+// #include "season6.h"
+#include "season7.h"
 
 // Utility class for operating on pairings.
 struct Pairing {
@@ -114,5 +115,5 @@ int main(void) {
         printf("After Week %2zu MC %9d\n", round + 1, num_valid_after_mc);
     }
 
-    printCoupleCounts(pairings, pairing_valid, /*dropZeros=*/true);
+    printCoupleCounts(pairings, pairing_valid, /*dropZeros=*/false);
 }
