@@ -11,7 +11,7 @@
 #define NUM_MEN 11
 #define NUM_WOMEN 11
 #define MAX_PAIRINGS 39916800
-#define NUM_ROUND 9
+#define NUM_ROUND 10
 using Man    = uint8_t;
 using Woman  = uint8_t;
 using Couple = std::pair<Man, Woman>;
@@ -85,35 +85,40 @@ const std::pair<Couple, bool> TB_RESULTS[] = {
     {{ZAK, NUTSA},    false},
     {{TEVIN, KENYA},  true },
     {{CAM, SAMANTHA}, false},
+    {{BRETT, NUTSA},  true },
 };
 
 const std::pair<std::array<Woman, NUM_MEN>, size_t> MC_RESULTS[] = {
     {{BRIA, KENYA, ASIA, CALI, KAYLA, MORGAN, MARIA, LAUREN, JASMINE, NUTSA,
       SAMANTHA},
-     3},
+     3},  // Week 1
     {{SAMANTHA, KENYA, LAUREN, ASIA, KAYLA, CALI, MARIA, MORGAN, BRIA, NUTSA,
       JASMINE},
-     3},
+     3},  // Week 2
     {{MORGAN, KENYA, JASMINE, CALI, KAYLA, BRIA, MARIA, LAUREN, NUTSA, SAMANTHA,
       ASIA},
-     3},
+     3},  // Week 3
     {{MORGAN, JASMINE, BRIA, KAYLA, ASIA, CALI, MARIA, NUTSA, SAMANTHA, LAUREN,
       KENYA},
-     2},
+     2},  // Week 4
     {{MORGAN, KENYA, JASMINE, NUTSA, KAYLA, CALI, MARIA, SAMANTHA, ASIA, BRIA,
       LAUREN},
-     4},
+     4},  // Week 5
     {{MORGAN, KENYA, ASIA, NUTSA, KAYLA, CALI, MARIA, LAUREN, JASMINE, SAMANTHA,
       BRIA},
-     4},
+     4},  // Week 6
     {{MORGAN, KENYA, ASIA, NUTSA, CALI, KAYLA, MARIA, LAUREN, JASMINE, SAMANTHA,
       BRIA},
-     4},
+     4},  // Week 7
     {{CALI, KENYA, JASMINE, NUTSA, LAUREN, MORGAN, MARIA, SAMANTHA, KAYLA, ASIA,
       BRIA},
-     4},
-    {{SAMANTHA, KENYA, NUTSA, BRIA, MORGAN, JASMINE, MARIA, CALI, KAYLA, LAUREN, ASIA},
-     4},
+     4},  // Week 8
+    {{SAMANTHA, KENYA, NUTSA, BRIA, MORGAN, JASMINE, MARIA, CALI, KAYLA, LAUREN,
+      ASIA},
+     4},  // Week 9
+    {{MORGAN, KENYA, LAUREN, NUTSA, BRIA, ASIA, MARIA, CALI, KAYLA, JASMINE,
+      SAMANTHA},
+     11},  // Week 10
 };
 
 // clang-format on
